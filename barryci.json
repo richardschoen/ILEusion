@@ -1,0 +1,13 @@
+{
+	"build": [{
+		"command": "gmake",
+		"args": ["BIN_LIB=ILEUSION"]
+	}],
+	"release": {
+		"post_commands": [{
+			"command": "gmake",
+			"args": ["release", "BIN_LIB=ILEUSION"]
+		}],
+		"upload_file": "./release/release.savf"
+	}
+}
