@@ -1,7 +1,7 @@
 ## ILEusion
-Web server for ILEusion created originall by Liam Allan in 2018. It was subsequently mothballed.   
+Web server for ILEusion created originally by Liam Allan in 2018. It was subsequently mothballed.    
 
-However the time has come for this project to see the light of day since alternative data services for IBM i are becoming a necessity with ODBC not always beng a good answer for data access in things like docker containers or platforms that don't support the IBM i Access ODBC client. 
+However the time may have come for this project to see the light of day. Alternate data services for IBM i are becoming a necessity with ODBC not always beng a good answer for data access in things like docker containers or platforms such as ARM64 that don't naturally support the IBM i Access ODBC client. 
 
 [Read more here from the original documentation site](https://sitemule.github.io/ileusion/about).
 
