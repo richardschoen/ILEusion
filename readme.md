@@ -1,25 +1,27 @@
 ## ILEusion
-Web server for ILEusion.
-[Read more here on the documentation site](https://sitemule.github.io/ileusion/about).
+Web server for ILEusion created originall by Liam Allan in 2018. It was subsequently mothballed.   
+
+However the time has come for this project to see the light of day since alternative data services for IBM i are becoming a necessity with ODBC not always beng a good answer for data access in things like docker containers or platforms that don't support the IBM i Access ODBC client. 
+
+[Read more here from the original documentation site](https://sitemule.github.io/ileusion/about).
 
 ## ILEusion Overview
-ILEusion
-ILEusion is an application whichs allows your IBM i reached from outside the OS over HTTP or Db2 stored procedure.
+ILEusion is an application whichs allows your IBM i reached from outside the OS over HTTP or Db2 stored procedure (sproc not inmplemented).
 
 It provides services for:
-- Calling programs and service programm functions.
+- Calling programs and service program functions.
 - Running SQL queries.
 - Working with data areas.
 - Running commands (QSH, CL, etc)
 
-### Documentation
+### Original Documentation
 - Installation   
 https://sitemule.github.io/ileusion/installation   
 - API documentation    
 https://sitemule.github.io/ileusion/api
 
 ### Available libraries
-ILEusion exists to replace XMLSERVICE with a nicer API layer so it is easier to work with. There are currently libraries for
+ILEusion exists to replace XMLSERVICE with a nicer API layer so it is easier to work with. There are currently libraries for:  
 
 - Node.js (ileusion_node) 
 https://github.com/WorksOfBarry/ileusion_node    
@@ -59,7 +61,7 @@ APIs available:
 /sql
 /call
 /dq/send
-/dq/pop
+/dq/recv
 /cl
 /qsh
 ```
@@ -288,7 +290,7 @@ End-Pi;
 - library - string, name of library
 - object - string, name of program
 - waittime - number, 0 by default (optional)
-- key - string/number, key of the item to be popped (optional)
+- key - string/number, key of the item to be recevied (optional)
 - keyorder - key comparison, EQ by default (optional)
 **Example request**
 ```
